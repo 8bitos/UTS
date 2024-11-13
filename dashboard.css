@@ -1,0 +1,135 @@
+body {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 400; /* Normal weight */
+}
+
+h1, h2 {
+    font-weight: 700; /* Bold weight */
+}
+
+
+/* Ensure HTML and Body cover the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Main Container should take full height */
+.d-flex {
+    min-height: 100vh;
+}
+
+/* Gradient Background for Content */
+#content {
+    flex-grow: 1;
+    min-height: 100vh; /* Ensure full screen height */
+    background: linear-gradient(135deg, #8312A5, #561496, #391E94, #1D2791, #0037A5);
+    color: white; /* Adjust text color for readability */
+    padding: 2rem;
+}
+
+/* Table Styling Adjustments */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white for readability */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for readability */
+}
+
+/* Ensure table text remains readable */
+.table td,
+.table th {
+    color: white;
+}
+
+/* Header Colors */
+h2 {
+    color: #FFFFFF;
+}
+
+/* Button Colors in Content */
+#content .btn-primary {
+    background-color: #720B98;
+    border-color: #720B98;
+}
+
+#content .btn-primary:hover {
+    background-color: #561496;
+    border-color: #561496;
+}
+
+#content .btn-danger {
+    background-color: #0037A5;
+    border-color: #0037A5;
+}
+
+#content .btn-danger:hover {
+    background-color: #1D2791;
+    border-color: #1D2791;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+#sidebar .nav-link i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+#content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sidebar button styles */
+.btn-sidebar {
+    background-color: #0037A5; /* Default color */
+    color: white; /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-sidebar:hover {
+    background-color: #3747A5; /* Hover color */
+    cursor: pointer;
+}
+
+/* Rotate arrow on expanded */
+.rotate-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown menu item styling */
+.sidebar-link {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    background-color: #3747A5; /* Hover color for dropdown items */
+    color: white;
+    border-radius: 5px;
+}
